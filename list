@@ -1,0 +1,18 @@
+import sys,os,math
+
+def addlist():
+    x = 0
+    list = []
+    for x in range (5):
+        x = x + 1
+        list.append(x)
+        
+    print list
+    print sum(list)
+    print ((sum(list)+1)**.5)%3
+    print 13%10
+    print "yay %d" % (x)
+    print .34*100
+
+addlist()
+    

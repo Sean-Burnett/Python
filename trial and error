@@ -1,0 +1,16 @@
+import os,sys,time,random
+
+class popupWindor(object):
+    def _init_(self,master):
+        top=self.top=Toplevel(master)
+        self.l=Label(top,text="Hello World")
+        self.l.pack()
+        self.e=entry(top)
+        self.e.pack()
+        self.b=Button(top,text='OK',command=self.cleanup)
+        self.b.pack()
+    def cleanup(self):
+        self.values=self.e.get()
+        self.top.destroy()
+
+

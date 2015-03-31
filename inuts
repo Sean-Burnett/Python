@@ -1,0 +1,23 @@
+import sys,os
+
+def something():
+    a=0
+    b=0
+    c=0
+    bp = 0
+    cp = 0
+    for x in range(5):
+        input_a = input("put a number:")
+        print input_a
+        if input_a == 0:
+            b = b + 1
+        else:
+            c = c + 1
+    print (5*100)/60
+    print b , c
+    bp = (b*100)/5
+    cp = (c*100)/5
+    print "there were %d percent of numbers less than 1" % (bp)
+    print "0 appeared %d percent of the time" % (cp)
+
+something()
